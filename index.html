@@ -9,129 +9,176 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="header-search-wrapper">
-            <button>
-                <img src="" alt="search icon" width="20" height="20">
-            </button>
-            <input type="search">
-        </div>
-
-        <div class="header-user">
-            <button>
-                <img src="" alt="ringing bell" width="20" height="20">
-            </button>
-            <button>
-                <img src="" alt="user icon" width="20" height="20">
-            </button>
-
-            <span class="user-name">Test Name</span>
-        </div>
-
-        <div class="header-welcome">
-            <button class="welcome-user-icon">
-                <img src="" alt="user icon" width="60" height="60">
-            </button>
-
-            <span class="greeting-sub">test1</span>
-            <span class="greeting-main">User Name</span>
-        </div>
-
-        <div class="header-actions">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
-        </div>
-    </div>
-    <div class="sidebar">
-        <div class="branding">
-            <img src="" alt="brand logo">
-            <h1>Dashboard</h1>
-        </div>
-        <nav class="nav-group">
-            <button class="nav-button"><img src="" alt="outline of house"><span>Home</span></button>
-            <button class="nav-button"><img src="" alt="small profile page"><span>Profile</span></button>
-            <button class="nav-button"><img src="" alt="text block"><span>Messages</span></button>
-            <button class="nav-button"><img src="" alt="clock"><span>History</span></button>
-            <button class="nav-button"><img src="" alt="to do icon"><span>Tasks</span></button>
-            <button class="nav-button"><img src="" alt="a group of people"><span>Communities</span></button>
-        </nav>
-        <nav class="nav-group-settings">
-            <button class="nav-button"><img src="" alt="outline of a cog"><span>Settings</span></button>
-            <button class="nav-button"><img src="" alt="question mark"><span>Support</span></button>
-            <button class="nav-button"><img src="" alt="check mark"><span>Privacy</span></button>
-        </nav>
-    </div>
-    <div class="main-content">
-        <div class="projects">
-            <h2 class="projects-header">Your Projects</h2>
-            <div class="card projects-card">
-                <h2>Super Cool Project</h2>
-                <p>test1</p>
-                <button></button>
-                <button></button>
-                <button></button>
+    <div class="dashboard-container">
+        <div class="header">
+            <div class="header-search-wrapper">
+                <button>
+                    <img src="icons/magnify.svg" alt="search icon" width="20" height="20">
+                </button>
+                <input type="search">
             </div>
-            <div class="card projects-card">
-                <h2>Less Cool Project</h2>
-                <p>test2</p>
-                <button></button>
-                <button></button>
-                <button></button>
+            <div class="header-user">
+                <button>
+                    <img src="icons/bell-ring-outline.svg" alt="ringing bell" width="20" height="20">
+                </button>
+                <button>
+                    <img src="" alt="user icon" width="20" height="20">
+                </button>
+                <span class="user-name">Test Name</span>
             </div>
-            <div class="card projects-card">
-                <h2>Impossible App</h2>
-                <p>test3</p>
-                <button></button>
-                <button></button>
-                <button></button>
+            <div class="header-welcome">
+                <button class="welcome-user-icon">
+                    <img src="" alt="user icon" width="60" height="60">
+                </button>
+                <span class="greeting-sub">test1</span>
+                <span class="greeting-main">User Name</span>
             </div>
-            <div class="card projects-card">
-                <h2>Easy Peasy App</h2>
-                <p>test4</p>
-                <button></button>
-                <button></button>
-                <button></button>
-            </div>
-            <div class="card projects-card">
-                <h2>Ad Blocker</h2>
-                <p>test5</p>
-                <button></button>
-                <button></button>
-                <button></button>
-            </div>
-            <div class="card projects-card">
-                <h2>Money Maker</h2>
-                <p>test6</p>
-                <button></button>
-                <button></button>
-                <button></button>
+            <div class="header-actions">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
             </div>
         </div>
-        <div class="announcements">
-            <h2 class="announcements-header">Announcements</h2>
-            <div class="card announcements-card">
-                <div class="announcement">
-                    <h3>Site Maintenance</h3>
-                    <p>test</p>
+        <div class="sidebar">
+            <div class="branding">
+                <img src="icons/view-dashboard.svg" alt="brand logo" width="40" height="40">
+                <h1>Dashboard</h1>
+            </div>
+            <nav class="nav-group">
+                <button class="nav-button"><img src="icons/home.svg" alt="outline of house" width="30"
+                        height="30"><span>Home</span></button>
+                <button class="nav-button"><img src="icons/card-account-details-outline.svg" alt="small profile page"
+                        width="30" height="30"><span>Profile</span></button>
+                <button class="nav-button"><img src="icons/message-reply.svg" alt="text block" width="30"
+                        height="30"><span>Messages</span></button>
+                <button class="nav-button"><img src="icons/clock-time-three.svg" alt="clock" width="30"
+                        height="30"><span>History</span></button>
+                <button class="nav-button"><img src="icons/file-multiple-outline.svg" alt="to do icon" width="30"
+                        height="30"><span>Tasks</span></button>
+                <button class="nav-button"><img src="icons/account-group.svg" alt="a group of people" width="30"
+                        height="30"><span>Communities</span></button>
+            </nav>
+            <nav class="nav-group-settings">
+                <button class="nav-button"><img src="icons/cog.svg" alt="outline of a cog" width="30"
+                        height="30"><span>Settings</span></button>
+                <button class="nav-button"><img src="icons/help-box.svg" alt="question mark" width="30"
+                        height="30"><span>Support</span></button>
+                <button class="nav-button"><img src="icons/shield-check.svg" alt="check mark" width="30"
+                        height="30"><span>Privacy</span></button>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="projects">
+                <h2 class="projects-header">Your Projects</h2>
+                <div class="card projects-card">
+                    <div class="project-text">
+                        <h2>Super Cool Project</h2>
+                        <p>test1</p>
+                    </div>
+                    <div class="project-actions">
+                        <button><img src="icons/star-plus-outline.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                        <button><img src="icons/eye-plus-outline.svg" alt="eye icon with a plus symbol" width="20"
+                                height="20"></button>
+                        <button><img src="icons/source-fork.svg" alt="source fork icon" width="20" height="20"></button>
+                    </div>
                 </div>
-                <div class="announcement">
-                    <h3>Community Share Day</h3>
-                    <p>test2</p>
+                <div class="card projects-card">
+                    <div class="project-text">
+                        <h2>Less Cool Project</h2>
+                        <p>test2</p>
+                    </div>
+                    <div class="project-actions">
+                        <button><img src="icons/star-plus-outline.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                        <button><img src="icons/eye-plus-outline.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                        <button><img src="icons/source-fork.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                    </div>
                 </div>
-                <div class="announcement">
-                    <h3>Updated Privacy Policy</h3>
-                    <p>test3</p>
+                <div class="card projects-card">
+                    <div class="project-text">
+                        <h2>Impossible App</h2>
+                        <p>test3</p>
+                    </div>
+                    <div class="project-actions">
+                        <button><img src="icons/star-plus-outline.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                        <button><img src="icons/eye-plus-outline.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                        <button><img src="icons/source-fork.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                    </div>
+                </div>
+                <div class="card projects-card">
+                    <div class="project-text">
+                        <h2>Easy Peasy App</h2>
+                        <p>test4</p>
+                    </div>
+                    <div class="project-actions">
+                        <button><img src="icons/star-plus-outline.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                        <button><img src="icons/eye-plus-outline.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                        <button><img src="icons/source-fork.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                    </div>
+                </div>
+                <div class="card projects-card">
+                    <div class="project-text">
+                        <h2>Ad Blocker</h2>
+                        <p>test5</p>
+                    </div>
+                    <div class="project-actions">
+                        <button><img src="icons/star-plus-outline.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                        <button><img src="icons/eye-plus-outline.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                        <button><img src="icons/source-fork.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                    </div>
+                </div>
+                <div class="card projects-card">
+                    <div class="project-text">
+                        <h2>Money Maker</h2>
+                        <p>test6</p>
+                    </div>
+                    <div class="project-actions">
+                        <button><img src="icons/star-plus-outline.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                        <button><img src="icons/eye-plus-outline.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                        <button><img src="icons/source-fork.svg" alt="star icon with a plus symbol" width="20"
+                                height="20"></button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="trending">
-            <h2 class="trending-header">Trending</h2>
-            <div class="card trending-card">
-                <button class="trending-profile"></button>
-                <button class="trending-profile"></button>
-                <button class="trending-profile"></button>
-                <button class="trending-profile"></button>
+            <div class="announcements">
+                <h2 class="announcements-header">Announcements</h2>
+                <div class="card announcements-card">
+                    <div class="announcement">
+                        <h3>Site Maintenance</h3>
+                        <p>test</p>
+                    </div>
+                    <div class="announcement">
+                        <h3>Community Share Day</h3>
+                        <p>test2</p>
+                    </div>
+                    <div class="announcement">
+                        <h3>Updated Privacy Policy</h3>
+                        <p>test3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="trending">
+                <h2 class="trending-header">Trending</h2>
+                <div class="card trending-card">
+                    <button class="trending-profile"></button>
+                    <button class="trending-profile"></button>
+                    <button class="trending-profile"></button>
+                    <button class="trending-profile"></button>
+                </div>
             </div>
         </div>
     </div>
