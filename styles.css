@@ -1,0 +1,120 @@
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    display: grid;
+    grid-template: 1fr 5fr / 2fr 7fr;
+}
+
+.header {
+    margin: 0 40px;
+    grid-column: 2;
+
+    display: grid;
+    grid-template: 2fr 3fr / 3fr 2fr;
+    align-items: center;
+}
+
+.header-user {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.user-name {
+    justify-self: center;
+}
+
+.header-welcome {
+    display: grid;
+    grid-template: 2fr 3fr / 60px 1fr;
+}
+
+.welcome-user-icon {
+    grid-row: 1 / -1;
+
+    margin: 5px;
+}
+
+.header-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+
+    margin: 0 10px;
+
+    display: grid;
+    grid-template-rows: 1fr 5fr 3fr 3fr;
+}
+
+.nav-group,
+.nav-group-settings {
+    margin: 20px 0;
+
+    display: grid;
+    gap: 10px;
+}
+
+.nav-group {
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.nav-group-settings {
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.branding,
+.nav-button {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    text-align: left;
+}
+
+.main-content {
+    margin: 15px 40px 50px 0;
+
+    display: grid;
+    grid-template: 1fr 1fr / 5fr 2fr;
+}
+
+.projects {
+    grid-row: 1 / -1;
+
+    display: grid;
+    grid-template: 30px repeat(3, 1fr) / repeat(2, 1fr);
+}
+
+.projects-header {
+    grid-column: 1 / -1;
+    align-self: center;
+}
+
+.announcements,
+.trending {
+    display: grid;
+    grid-template-rows: 30px 1fr;
+}
+
+.announcements-card {
+    margin-bottom: 15px;
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.trending-card {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.announcements-header,
+.trending-header {
+    align-self: center;
+}
