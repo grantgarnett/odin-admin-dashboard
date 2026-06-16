@@ -277,9 +277,20 @@ button {
 
 .trending-profile {
     display: grid;
-    grid-template: 2fr 3fr / 40px 1fr;
+    grid-template: 1fr 1fr / 40px 1fr;
+    gap: 0 10px;
+
+    text-align: left;
 }
 
 .trending-profile>img {
     grid-row: 1 / -1;
+}
+
+.trending-profile span:first-of-type {
+    align-self: end;
+}
+
+.trending-profile span:last-of-type {
+    align-self: start;
 }
