@@ -59,6 +59,12 @@ button {
     align-items: center;
 }
 
+.user-name,
+.greeting-sub,
+.greeting-main {
+    font-weight: bold;
+}
+
 .header-search-wrapper {
     margin-right: 30px;
 
@@ -82,7 +88,7 @@ button {
     display: grid;
     grid-template-columns: 20px 40px 1fr;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
 }
 
 .user-name {
@@ -91,8 +97,18 @@ button {
 
 .header-welcome {
     display: grid;
-    grid-template: 2fr 3fr / 60px 1fr;
-    gap: 15px;
+    grid-template: 1fr 1fr / 60px 1fr;
+    gap: 0 15px;
+}
+
+.greeting-sub {
+    align-self: end;
+    font-size: 0.75rem;
+}
+
+.greeting-main {
+    align-self: start;
+    font-size: 1.25rem;
 }
 
 .welcome-user-icon {
@@ -113,6 +129,7 @@ button {
     height: 30px;
 
     border-radius: 20px;
+    color: white;
 }
 
 .sidebar {
