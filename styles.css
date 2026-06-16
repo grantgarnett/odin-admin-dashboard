@@ -294,3 +294,15 @@ button {
 .trending-profile span:last-of-type {
     align-self: start;
 }
+
+button:hover {
+    opacity: 0.5;
+}
+
+button:active {
+    opacity: 0.75;
+}
+
+.card:hover {
+    border-left-color: rgb(66, 71, 78);
+}
