@@ -8,6 +8,12 @@ body {
 button {
     border: 0;
     padding: 0;
+
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.card {
+    background-color: white;
 }
 
 .dashboard-container {
@@ -16,8 +22,9 @@ button {
 }
 
 .header {
-    margin: 0 40px;
     grid-column: 2;
+
+    padding: 0 40px;
 
     display: grid;
     grid-template: 1fr 1fr / 6fr 1fr 2fr;
@@ -60,13 +67,21 @@ button {
     grid-column: 2 / -1;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.header-actions button {
+    background-color: rgb(62, 109, 202);
+    height: 30px;
 }
 
 .sidebar {
     grid-row: 1 / -1;
 
-    margin: 0 10px;
+    padding: 0 10px;
+    background-color: rgb(62, 109, 202);
 
     display: grid;
     grid-template-rows: 1fr 5fr 3fr 3fr;
@@ -96,12 +111,23 @@ button {
     text-align: left;
 }
 
+.sidebar h1,
+.sidebar span {
+    color: white;
+}
+
+.sidebar img {
+    filter: invert(100%);
+}
+
 .sidebar img {
     justify-self: center;
 }
 
 .main-content {
-    margin: 15px 40px 50px 0;
+    padding: 15px 40px 50px 0;
+
+    background-color: rgb(221, 229, 244);
 
     display: grid;
     grid-template: 1fr 1fr / 5fr 2fr;
@@ -110,8 +136,11 @@ button {
 .projects {
     grid-row: 1 / -1;
 
+    padding: 0 18px;
+
     display: grid;
     grid-template: 30px repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 18px;
 }
 
 .projects-header {
@@ -143,11 +172,17 @@ button {
 .trending {
     display: grid;
     grid-template-rows: 30px 1fr;
+
+    gap: 18px;
 }
 
 .announcements-content,
 .trending-content {
     margin: 0 15px;
+}
+
+.trending {
+    margin-top: 30px;
 }
 
 .announcements-content {
